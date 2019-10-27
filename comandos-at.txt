@@ -1,0 +1,26 @@
+
+
+AT+CGATT = 1
+
+AT+CIPMUX=0
+
+AT+CSTT = "web.vmc.net.co","",""
+
+AT+CIICR
+
+AT+CIFSR
+
+AT+CIPSTART="TCP","sim.cleverapps.io",80
+
+AT+CIPSEND=100
+
+> GET sim.cleverapps.io/index.php?nombre=daniel123 HTTP/1.1
+
+
+/*
+ * HOST: sim.cleverapps.io
+*/
+
+AT+CIPSHUT cerrar la conexcion
+
+
