@@ -56,16 +56,6 @@
     }else{
         echo "no conecto";
     }
-
-
-
-    // $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-    // $txt = $timestamp . " - ".$datastring."\n";
-    // fwrite($myfile, $txt);
-    // fclose($myfile);
-    // echo $txt;
-
-    //echo "<hr> Datos del Sim800L: ".$datastring;
 ?>
 
 
