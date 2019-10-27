@@ -24,10 +24,10 @@
     $timestamp = date("d-m-Y - H:i:s");
 
     // conexiones a la base de datos
-    $servidor = "localhost";
-    $usuario = "root";
-    $password = "";
-    $basededatos = "sim800l";
+    $servidor = "beokzru4hqmlcmyupvm4-mysql.services.clever-cloud.com";
+    $usuario = "uj2tjyozbkc5m5cb";
+    $password = "jAiobUlpXAdHtZOTEmho";
+    $basededatos = "beokzru4hqmlcmyupvm4";
 
     $conexion = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
@@ -36,14 +36,14 @@
         if(isset($_GET)){
 
             $dta = $_GET["nombre"];
-
+        
             $sql = "INSERT INTO data ( dato ) VALUES ('$dta')";
 
             if($dta == ""){
-                echo "sin datos para registrar";
+                echo "<h1>sin datos para mostrar</h1>";
             }else{
                 if(mysqli_query($conexion, $sql)){
-                    echo "cargo SI: - ".$dta;
+                    echo "cargo SI - ".$dta;
                 }else{
                     echo "no cargo ".mysqli_error($conexion);
                 }
@@ -51,7 +51,7 @@
             }
 
         }else{
-            echo "...";
+            echo "cargo NO";
         }
     }else{
         echo "no conecto";
