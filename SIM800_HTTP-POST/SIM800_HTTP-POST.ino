@@ -8,7 +8,7 @@ SoftwareSerial mySerial(3, 2);            // RX, TX Pins
 String apn = "internet.comcel.com.co";       //APN
 String apn_u = "comcel";                     //APN-Username
 String apn_p = "comcel";                     //APN-Password
-String url = "http://181.140.22.148/SIM800-PHP-Testserver/index.php";  //URL for HTTP-POST-REQUEST
+String url = "https://sim.cleverapps.io/index.php";  //URL for HTTP-POST-REQUEST
 String data1;   //String for the first Paramter (e.g. Sensor1)
 String data2;   //String for the second Paramter (e.g. Sensor2)
 
