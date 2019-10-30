@@ -8,7 +8,7 @@ SoftwareSerial mySerial(3, 2);            // RX, TX Pins
 String apn = "internet.comcel.com.co";       //APN
 String apn_u = "comcel";                     //APN-Username
 String apn_p = "comcel";                     //APN-Password
-String url = "https://sim.cleverapps.io/index.php";  //URL for HTTP-POST-REQUEST
+String url = "https://sim.cleverapps.io/data.php";  //URL for HTTP-POST-REQUEST
 String data1;   //String for the first Paramter (e.g. Sensor1)
 String data2;   //String for the second Paramter (e.g. Sensor2)
 
@@ -73,7 +73,7 @@ void gsm_sendhttp() {
   mySerial.println("AT+HTTPDATA=192,10000");
   runsl();
   delay(100);
-  mySerial.println("params=" + data1 + "~" + data2);
+  mySerial.println("datos=" + data1);
   runsl();
   delay(10000);
   mySerial.println("AT+HTTPACTION=1");
