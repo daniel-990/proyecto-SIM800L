@@ -1,4 +1,4 @@
-# SIM800L | Servidor web | Mysql | PHP | Ajax
+# SIM800L | Servidor web | Mysql | PHP | AJAX
 
 [![php|php](https://www.clever-cloud.com/images/brand-assets/logos/v2/logo_on_white.png)](https://www.clever-cloud.com/en/)
 
