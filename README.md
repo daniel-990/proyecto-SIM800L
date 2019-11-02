@@ -6,10 +6,10 @@
 
 # Url del proyecto
 
-  - https://sim.cleverapps.io
+  - https://appsim.cloudaccess.host
 
 # Como se ingresan datos 
 los datos se ingresan por la url ejm:
 
   - /data.php?datos=prueba1
-  - quedando asi: http://sim.cleverapps.io/data.php?datos=prueba1
+  - quedando asi: https://appsim.cloudaccess.host/data.php?datos=prueba1
