@@ -1,4 +1,4 @@
-function getTimeAJAX() {   
+function getData() {   
 
     const datos = $.ajax({
 
@@ -12,5 +12,5 @@ function getTimeAJAX() {
     document.getElementById("render").innerHTML = datos;
 }
 
-//con esta funcion llamamos a la función getTimeAJAX cada segundo para actualizar el div que mostrará la hora
-setInterval(getTimeAJAX,1000);
+//con esta funcion llamamos a la función getData cada segundo para actualizar el div que mostrará la hora
+setInterval(getData,1000);
